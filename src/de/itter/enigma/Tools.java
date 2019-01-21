@@ -7,6 +7,9 @@ public class Tools {
 			{ 'M', 'M' }, { 'N', 'N' }, { 'O', 'O' }, { 'P', 'P' }, { 'Q', 'Q' }, { 'R', 'R' }, { 'S', 'S' },
 			{ 'T', 'T' }, { 'U', 'U' }, { 'V', 'V' }, { 'W', 'W' }, { 'X', 'X' }, { 'Y', 'Y' }, { 'Z', 'Z' } };
 
+	private static char[][] kenngruppen = { { 'A', 'A', 'A' }, { 'B', 'B', 'B' }, { 'C', 'C', 'C' },
+			{ 'D', 'D', 'D' } };
+
 	public static synchronized char[][] getWiring() {
 		return wiring.clone();
 	}
@@ -19,5 +22,9 @@ public class Tools {
 		}
 
 		return wiring;
+	}
+
+	public synchronized char[][] getKenngruppen() {
+		return kenngruppen.clone();
 	}
 }
