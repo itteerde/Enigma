@@ -3,35 +3,34 @@ package de.itter.enigma;
 public class Rotor {
 
 	private int position = 0;
-	private char[] wiring = null;
+	private char[][] wiring = Tools.getWiring();
 
 	public Rotor(int number) {
-		String wiring = null;
 
 		switch (number) {
 		case 1:
-			wiring = "EKMFLGDQVZNTOWYHXUSPAIBRCJ";
+			wiring = Tools.getWiring("EKMFLGDQVZNTOWYHXUSPAIBRCJ");
 			break;
 		case 2:
-			wiring = "AJDKSIRUXBLHWTMCQGZNPYFVOE";
+			wiring = Tools.getWiring("AJDKSIRUXBLHWTMCQGZNPYFVOE");
 			break;
 		case 3:
-			wiring = "BDFHJLCPRTXVZNYEIWGAKMUSQO";
+			wiring = Tools.getWiring("BDFHJLCPRTXVZNYEIWGAKMUSQO");
 			break;
 		case 4:
-			wiring = "ESOVPZJAYQUIRHXLNFTGKDCMWB";
+			wiring = Tools.getWiring("ESOVPZJAYQUIRHXLNFTGKDCMWB");
 			break;
 		case 5:
-			wiring = "VZBRGITYUPSDNHLXAWMJQOFECK";
+			wiring = Tools.getWiring("VZBRGITYUPSDNHLXAWMJQOFECK");
 			break;
 		case 6:
-			wiring = "JPGVOUMFYQBENHZRDKASXLICTW";
+			wiring = Tools.getWiring("JPGVOUMFYQBENHZRDKASXLICTW");
 			break;
 		case 7:
-			wiring = "NZJHGRCXMYSWBOUFAIVLPEKQDT";
+			wiring = Tools.getWiring("NZJHGRCXMYSWBOUFAIVLPEKQDT");
 			break;
 		case 8:
-			wiring = "FKQHTLXOCBJSPDZRAMEWNIUYGV";
+			wiring = Tools.getWiring("FKQHTLXOCBJSPDZRAMEWNIUYGV");
 			break;
 		}
 	}

@@ -1,6 +1,6 @@
 package de.itter.enigma;
 
-public class Reflector {
+public class EntryWheel {
 
 	private char[][] wiring = Tools.getWiring();
 }
