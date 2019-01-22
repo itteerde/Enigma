@@ -35,4 +35,41 @@ public class Rotor {
 		}
 	}
 
+	/**
+	 * 
+	 * @return the position as printed on the rotors, that is 1 to 26
+	 */
+	public int getPosition() {
+		return position + 1;
+	}
+
+	/**
+	 * the position as printed on the rotors, that is 1 to 26
+	 * 
+	 * @param position
+	 */
+	public void setPosition(int position) {
+		this.position = position - 1;
+	}
+
+	/**
+	 * Turns the rotor by one step.
+	 * 
+	 * @return the rotor's new position.
+	 */
+	public int step() {
+		position = ++position % 26;
+		return position;
+	}
+
+	/**
+	 * Maps one character (stroke) to the character on the other side of the rotor.
+	 * 
+	 * @param c
+	 * @return
+	 */
+	public char map(char c) {
+		return wiring[(c - 'A' + position) % 26][2];
+	}
+
 }

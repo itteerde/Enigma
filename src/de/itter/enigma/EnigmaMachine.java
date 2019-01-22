@@ -8,17 +8,18 @@ public class EnigmaMachine {
 
 	/**
 	 * Creates an instance of the machine using one line of the
-	 * <code>Luftwaffen-Maschinen-Schlüssel</code>. That is the airforce variant an
-	 * Enigma M3, same as army.
+	 * <i>Luftwaffen-Maschinen-Schlüssel</i>. That is the airforce variant, an
+	 * <i>Enigma M3</i>, same as army (<i>Heer</i>).
 	 * 
 	 * Note also that if no wiring at the switch board is done and the reflector and
 	 * entry wheel are not reconfigured this is the weak civil version in essence.
 	 * 
-	 * @param walzenlage
-	 * @param ringstellung
-	 * @param umkehrwalze
-	 * @param steckerbrett
-	 * @param kenngruppen
+	 * @param walzenlage   which rotors need to be placed into the machine in what
+	 *                     order
+	 * @param ringstellung to what positions are the rotors to be set
+	 * @param umkehrwalze  reflector
+	 * @param steckerbrett switch board (aka plug board)
+	 * @param kenngruppen  message identifier groups
 	 */
 	public EnigmaMachine createEnigmaMachine(int[] walzenlage, int[] ringstellung, char[][] umkehrwalze,
 			char[][] steckerbrett, char[][] kenngruppen) {
