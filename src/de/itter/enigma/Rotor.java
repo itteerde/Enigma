@@ -1,6 +1,6 @@
 package de.itter.enigma;
 
-public class Rotor {
+public class Rotor extends Wiring {
 
 	private int position = 0;
 	private char[][] wiring = Tools.getWiring();
@@ -60,16 +60,6 @@ public class Rotor {
 	public int step() {
 		position = ++position % 26;
 		return position;
-	}
-
-	/**
-	 * Maps one character (stroke) to the character on the other side of the rotor.
-	 * 
-	 * @param c
-	 * @return
-	 */
-	public char map(char c) {
-		return wiring[(c - 'A' + position) % 26][2];
 	}
 
 }

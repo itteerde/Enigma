@@ -19,4 +19,11 @@ class RotorTest {
 		assertEquals(2, r.getPosition());
 	}
 
+	@Test
+	void testMap() {
+		Rotor r = new Rotor(1);
+		assertEquals('E', r.map('A'));
+		assertEquals('J', r.map('Z'));
+	}
+
 }
