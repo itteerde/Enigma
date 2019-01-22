@@ -3,7 +3,6 @@ package de.itter.enigma;
 public class Rotor extends Wiring {
 
 	private int position = 0;
-	private char[][] wiring = Tools.getWiring();
 
 	public Rotor(int number) {
 

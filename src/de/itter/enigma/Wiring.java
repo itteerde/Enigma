@@ -4,7 +4,7 @@ public abstract class Wiring {
 
 	private int position = 0;
 
-	private char[][] wiring = Tools.getWiring();
+	protected char[][] wiring = Tools.getWiring();
 
 	/**
 	 * Maps one character (stroke) to the character on the other side of the rotor.
