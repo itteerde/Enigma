@@ -12,7 +12,8 @@ public class EnigmaMachine {
 	 * <i>Enigma M3</i>, same as army (<i>Heer</i>).
 	 * 
 	 * Note also that if no wiring at the switch board is done and the reflector and
-	 * entry wheel are not reconfigured this is the weak civil version in essence.
+	 * entry wheel are not reconfigured this is the weak civilian version in
+	 * essence.
 	 * 
 	 * @param walzenlage   which rotors need to be placed into the machine in what
 	 *                     order
