@@ -1,6 +1,6 @@
 package de.itter.enigma;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import org.junit.jupiter.api.Test;
 
@@ -9,6 +9,7 @@ class EnigmaMachineTest {
 	@Test
 	void testCreateEnigmaMachine() {
 		fail("Not yet implemented");
+
 	}
 
 	@Test
@@ -29,6 +30,12 @@ class EnigmaMachineTest {
 	@Test
 	void testTypeChar() {
 		fail("Not yet implemented");
+	}
+
+	@Test
+	void testTypeString() {
+		EnigmaMachine khaledsEnigmaMachsdhjfdvgine2541fjfogipsj = new EnigmaMachine();
+		System.out.println(khaledsEnigmaMachsdhjfdvgine2541fjfogipsj.type("JJJJHHGG"));
 	}
 
 }

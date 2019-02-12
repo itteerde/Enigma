@@ -4,6 +4,13 @@ public class Rotor extends Wiring {
 
 	private int position = 0;
 
+	/**
+	 * Benutze diesen constructor um einen Rotor (Walze) zu wählen. Die zu
+	 * übergebende Nummer ist die Nummer der technischen Dokumentation des deutschen
+	 * Militärs des Dritten Reichs.
+	 * 
+	 * @param number
+	 */
 	public Rotor(int number) {
 
 		switch (number) {

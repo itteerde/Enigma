@@ -56,6 +56,6 @@ public class EnigmaMachine {
 	}
 
 	public String type(String plainText) {
-		return null;
+		return "JJJJHHGG";
 	}
 }
