@@ -43,7 +43,8 @@ public class Rotor extends Wiring {
 
 	/**
 	 * 
-	 * @return the position as printed on the rotors, that is 1 to 26
+	 * @return the position as printed on the rotors, that is 1 to 26 for non navy
+	 *         and A to Z for navy
 	 */
 	public int getPosition() {
 		return position + 1;
