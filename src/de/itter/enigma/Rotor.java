@@ -3,6 +3,8 @@ package de.itter.enigma;
 public class Rotor extends Wiring {
 
 	private int position = 0;
+	private int[] notches = new int[1]; // the notches move the adjacent rotor, regularly to the left (the slower ones),
+										// but notice the "Engima anomaly"
 
 	/**
 	 * Benutze diesen constructor um einen Rotor (Walze) zu wählen. Die zu
