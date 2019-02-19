@@ -2,7 +2,6 @@ package de.itter.enigma;
 
 public class Rotor extends Wiring {
 
-	private int position = 0;
 	private int[] notches; // the notches move the adjacent rotor, regularly to the left (the slower ones),
 							// but notice the "Engima anomaly"
 	private int[] turnovers;

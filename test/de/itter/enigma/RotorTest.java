@@ -24,6 +24,8 @@ class RotorTest {
 		Rotor r = new Rotor("LPGSZMHAEOQKVXRFYBUTNICJDW");
 		assertEquals('L', r.map('A'));
 		assertEquals('W', r.map('Z'));
+		r.step();
+		assertEquals('P', r.map('A'));
 	}
 
 }

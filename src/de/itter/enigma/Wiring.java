@@ -2,7 +2,7 @@ package de.itter.enigma;
 
 public abstract class Wiring {
 
-	private int position = 0;
+	protected int position = 0;
 
 	protected char[][] wiring = Tools.getWiring();
 
