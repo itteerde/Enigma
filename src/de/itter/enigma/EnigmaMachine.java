@@ -53,6 +53,11 @@ public class EnigmaMachine {
 	}
 
 	public char type(char plainChar) {
+		char c = plainChar;
+		for (int i = 0; i < rotors.length; i++) {
+			c = rotors[i].map(c);
+			rotors[i].step();// or before and what about fixed rotors?
+		}
 		return 'A';
 	}
 

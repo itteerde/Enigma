@@ -5,6 +5,7 @@ public class Rotor extends Wiring {
 	private int[] notches; // the notches move the adjacent rotor, regularly to the left (the slower ones),
 							// but notice the "Engima anomaly"
 	private int[] turnovers;
+	private boolean isFixed = false;
 
 	/**
 	 * 
@@ -13,6 +14,10 @@ public class Rotor extends Wiring {
 	public Rotor(String wiring) {
 		this.wiring = Tools.getWiring(wiring);
 
+	}
+
+	public void setFixed(boolean isFixed) {
+		this.isFixed = isFixed;
 	}
 
 	/**
@@ -39,6 +44,9 @@ public class Rotor extends Wiring {
 	 * @return the rotor's new position.
 	 */
 	public int step() {
+		if (isFixed) {
+			return position;
+		}
 		position = ++position % 26;
 		return position;
 	}

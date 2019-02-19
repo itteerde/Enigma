@@ -2,10 +2,10 @@ package de.itter.enigma;
 
 public class Enigma {
 
-	private static final int ENIGMA_D = 0x1000;
-	private static final int ENIGMA_I = 0x2000;
-	private static final int ENIGMA_M3 = 0x3000;
-	private static final int ENIGMA_M4 = 0x4000;
+	public static final int ENIGMA_D = 0x1000;
+	public static final int ENIGMA_I = 0x2000;
+	public static final int ENIGMA_M3 = 0x3000;
+	public static final int ENIGMA_M4 = 0x4000;
 
 	private static final int ROTORS = 0x100;
 	private static final int ETW = 12;
