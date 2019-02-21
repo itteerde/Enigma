@@ -6,6 +6,10 @@ public class EnigmaMachine {
 	private Reflector reflector = null;
 	private EntryWheel entryWheel = null;
 
+	public EnigmaMachine(int enigmaD) {
+		// TODO Auto-generated constructor stub
+	}
+
 	/**
 	 * Creates an instance of the machine using one line of the
 	 * <i>Luftwaffen-Maschinen-Schlüssel</i>. That is the airforce variant, an
@@ -22,7 +26,7 @@ public class EnigmaMachine {
 	 * @param steckerbrett switch board (aka plug board)
 	 * @param kenngruppen  message identifier groups
 	 */
-	public EnigmaMachine createEnigmaMachine(int[] walzenlage, int[] ringstellung, char[][] umkehrwalze,
+	private EnigmaMachine createEnigmaMachine(int[] walzenlage, int[] ringstellung, char[][] umkehrwalze,
 			char[][] steckerbrett, char[][] kenngruppen) {
 
 		return null;
@@ -62,6 +66,6 @@ public class EnigmaMachine {
 	}
 
 	public String type(String plainText) {
-		return "JJJJHHGG";
+		return null;
 	}
 }

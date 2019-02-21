@@ -34,8 +34,20 @@ class EnigmaMachineTest {
 
 	@Test
 	void testTypeString() {
-		EnigmaMachine khaledsEnigmaMachsdhjfdvgine2541fjfogipsj = new EnigmaMachine();
-		System.out.println(khaledsEnigmaMachsdhjfdvgine2541fjfogipsj.type("JJJJHHGG"));
+		EnigmaMachine em = (new EnigmaMachineFactory()).getEnigmaMachine(Enigma.ENIGMA_D);
+
+		RotorFactory rf = new RotorFactory();
+		Rotor[] rotors = new Rotor[3];
+
+		Rotor left = rf.getRotor(Enigma.D_ROTORS_III);
+		Rotor middle = rf.getRotor(Enigma.D_ROTORS_I);
+		Rotor right = rf.getRotor(Enigma.D_ROTORS_II);
+
+		left.setPosition(17);
+		middle.setPosition(26);
+		right.setPosition(1);
+
+		System.out.println(em.type("WETTERBERICHTYYZEBRAYYSTARKEYYBOEENYYAUSYYNNOYYYHEILYYHITLER"));
 	}
 
 }

@@ -13,8 +13,12 @@ public class EnigmaMachineFactory {
 		}
 	}
 
+	public EnigmaMachine getEnigmaMachine() {
+		return getEnigmaMachine(Enigma.ENIGMA_D);
+	}
+
 	private EnigmaMachine enigmaD() {
-		// TODO Auto-generated method stub
+		EnigmaMachine em = new EnigmaMachine(Enigma.ENIGMA_D);
 		return null;
 	}
 }
