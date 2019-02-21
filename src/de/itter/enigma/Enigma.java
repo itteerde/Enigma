@@ -8,7 +8,7 @@ public class Enigma {
 	public static final int ENIGMA_M4 = 0x4000;
 
 	private static final int ROTORS = 0x100;
-	private static final int ETW = 12;
+	private static final int ETW = 12;// Eintrittswalze (ETW), entry wheel
 	private static final int ROTOR_I = 1;
 	private static final int ROTOR_II = 2;
 	private static final int ROTOR_III = 3;

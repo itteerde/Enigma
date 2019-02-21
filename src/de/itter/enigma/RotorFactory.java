@@ -37,6 +37,6 @@ public class RotorFactory extends WiringFactory {
 	}
 
 	private Rotor enigmaDEtw() {
-		return new Rotor("QWERTZUIOASDFGHJKPYXCVBNML");
+		return new Rotor("JWULCMNOHPQZYXIRADKEGVBTSF");// other source: QWERTZUIOASDFGHJKPYXCVBNML
 	}
 }
