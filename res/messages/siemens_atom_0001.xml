@@ -1,0 +1,27 @@
+<xml>
+	<enigma>
+		<type>I</type>
+		<configuration>
+			<rotors>
+				<left>
+					<type>3D</type>
+					<rotorposition>A</rotorposition>
+					<ringposition>1</ringposition>
+				</left>
+				<middle>
+					<type>2D</type>
+					<rotorposition>A</rotorposition>
+					<ringposition>1</ringposition>
+				</middle>
+				<right>
+					<type>1D</type>
+					<rotorposition>A</rotorposition>
+					<ringposition>1</ringposition>
+				</right>
+			</rotors>
+		</configuration>
+	</enigma>
+	
+	<text type="plaintext">HAHNYYBEWEISYYATOMYYBRENNSTOFFYYMOEGLICHYYYWIRTSCHAFTLICHKEITYYUNKLARYYYHEISENBERGYYMUSSYYWIRKUNGSQUERSCHNITTYYBERECHNENYYYMILITAERISCHEYYANWENDUNGENYYPRINZIPIELLYYDENKBARYYYHEILYYHITLER</text>
+	<text type="chiffre">aldig bgtqq abqxz clulu inajd kciid trpcj zvwhs sugge duezt hscrp jspba hshos mohwv beosp oulyg meaps qibcs pzowg rxjzt wlroo tripv oyalu noeqq khugt aupxo seino vpvfi mcqym gcvkm wrtfd uegvo ujqbx xbeog odvrb vreme fwrqb v</text>
+</xml>

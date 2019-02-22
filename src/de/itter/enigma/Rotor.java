@@ -5,6 +5,8 @@ public class Rotor extends Wiring {
 	private int[] notches; // the notches move the adjacent rotor, regularly to the left (the slower ones),
 							// but notice the "Engima anomaly"
 	private int[] turnovers;
+	private int ring; // "Ringstellung" ring position. On the rotor there is a red mark that can be
+						// set turning a ring that is part of the rotor and offsets the rotor.
 	private boolean isFixed = false;
 
 	/**
@@ -30,12 +32,27 @@ public class Rotor extends Wiring {
 	}
 
 	/**
-	 * the position as printed on the rotors, that is 1 to 26
+	 * Sets the rotor position as printed on the rotors, that is 1 to 26 or a to z.
 	 * 
-	 * @param position
+	 * @param position the position as printed on the rotors, that is 1 to 26 or a
+	 *                 to z. For convinience you may also use 'a' to 'z' or 'A' to
+	 *                 'Z'.
 	 */
 	public void setPosition(int position) {
-		this.position = position - 1;
+		if (position >= 'A' && position <= 'Z') {
+			position = position - 'A' - 1;
+			return;
+		}
+		if (position >= 'a' && position <= 'z') {
+			position = position - 'a' - 1;
+			return;
+		}
+		if (position >= 1 && position <= 26) {
+			this.position = position - 1;
+			return;
+
+		}
+		throw new IllegalArgumentException("position must be 1-26 (may be specified as 1-26, 'a'-'z' or 'A'-'Z')");
 	}
 
 	/**
