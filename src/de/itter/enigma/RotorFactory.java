@@ -2,7 +2,7 @@ package de.itter.enigma;
 
 public class RotorFactory extends WiringFactory {
 
-	public Rotor getRotor(int type) {
+	public static Rotor getRotor(int type) {
 		switch (type) {
 		case Enigma.D_ROTORS_ETW:
 			return enigmaDEtw();
@@ -20,23 +20,23 @@ public class RotorFactory extends WiringFactory {
 		}
 	}
 
-	private Rotor enigmaDUkw() {
+	private static Rotor enigmaDUkw() {
 		return new Rotor("IMETCGFRAYSQBZXWLHKDVUPOJN");
 	}
 
-	private Rotor enigmaDRotorIII() {
+	private static Rotor enigmaDRotorIII() {
 		return new Rotor("CJGDPSHKTURAWZXFMYNQOBVLIE");
 	}
 
-	private Rotor enigmaDRotorII() {
+	private static Rotor enigmaDRotorII() {
 		return new Rotor("SLVGBTFXJQOHEWIRZYAMKPCNDU");
 	}
 
-	private Rotor enigmaDRotorI() {
+	private static Rotor enigmaDRotorI() {
 		return new Rotor("LPGSZMHAEOQKVXRFYBUTNICJDW");
 	}
 
-	private Rotor enigmaDEtw() {
+	private static Rotor enigmaDEtw() {
 		return new Rotor("JWULCMNOHPQZYXIRADKEGVBTSF");// other source: QWERTZUIOASDFGHJKPYXCVBNML
 	}
 }

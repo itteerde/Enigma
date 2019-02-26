@@ -3,11 +3,12 @@ package de.itter.enigma;
 public class EnigmaMachine {
 
 	private Rotor[] rotors = new Rotor[3];
-	private Reflector reflector = null;
-	private EntryWheel entryWheel = null;
+	private Rotor reflector = null;
+	private Rotor entryWheel = null;
+	private int type = 0;
 
-	public EnigmaMachine(int enigmaD) {
-		// TODO Auto-generated constructor stub
+	public EnigmaMachine(int type) {
+		this.type = type;
 	}
 
 	/**
@@ -36,11 +37,11 @@ public class EnigmaMachine {
 		this.rotors = rotors;
 	}
 
-	public void setReflector(Reflector reflector) {
+	public void setReflector(Rotor reflector) {
 		this.reflector = reflector;
 	}
 
-	public void setEntryWheel(EntryWheel entryWheel) {
+	public void setEntryWheel(Rotor entryWheel) {
 		this.entryWheel = entryWheel;
 	}
 
@@ -48,11 +49,11 @@ public class EnigmaMachine {
 		return rotors;
 	}
 
-	public Reflector getReflector() {
+	public Rotor getReflector() {
 		return reflector;
 	}
 
-	public EntryWheel getEntryWheel() {
+	public Rotor getEntryWheel() {
 		return entryWheel;
 	}
 
