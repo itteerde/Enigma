@@ -19,9 +19,7 @@ public abstract class Wiring {
 	 */
 	public char map(char c) {
 		char cc = wiring[(c - 'A' + position) % 26][1];
-		if (LOGGER.isLoggable(Level.FINEST)) {
-			LOGGER.log(Level.FINEST, "mapping " + c + "->" + cc);
-		}
+		LOGGER.log(Level.SEVERE, "mapping " + c + "->" + cc);
 		return cc;
 	}
 }
