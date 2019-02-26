@@ -1,7 +1,20 @@
 package de.itter.enigma;
 
+/**
+ * Project globals. For educational considerations this is not an interface.
+ * Architecture-wise it should be one and might become one once more classes ob
+ * OOD have been given.
+ * 
+ * @author Erik Itter
+ *
+ */
 public class Enigma {
 
+	/**
+	 * Commercial Enigma machine as publically available before the war. This is the
+	 * pretty unsafe version that can be attacked by hand if the payoff is high
+	 * enough.
+	 */
 	public static final int ENIGMA_D = 0x1000;
 	public static final int ENIGMA_I = 0x2000;
 	public static final int ENIGMA_M3 = 0x3000;

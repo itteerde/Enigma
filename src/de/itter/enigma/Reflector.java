@@ -1,6 +1,5 @@
 package de.itter.enigma;
 
-public class Reflector {
+public class Reflector extends Wiring {
 
-	private char[][] wiring = Tools.getWiring();
 }

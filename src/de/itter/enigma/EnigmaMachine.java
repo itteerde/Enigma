@@ -62,10 +62,20 @@ public class EnigmaMachine {
 			c = rotors[i].map(c);
 			rotors[i].step();// or before and what about fixed rotors?
 		}
-		return 'A';
+		c = reflector.map(c);
+		for (int i = rotors.length - 1; i >= 0; i--) {
+			c = rotors[i].map(c);
+			rotors[i].step();// or before and what about fixed rotors?
+		}
+		return c;
 	}
 
 	public String type(String plainText) {
+		StringBuffer s = new StringBuffer();
+		char[] pt = plainText.toCharArray();
+		for (int i = 0; i < pt.length; i++) {
+			s.append(type(pt[i]));
+		}
 		return null;
 	}
 }
