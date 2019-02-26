@@ -1,6 +1,11 @@
 package de.itter.enigma;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public abstract class Wiring {
+
+	private static Logger LOGGER = Logger.getLogger(Wiring.class.getName());
 
 	protected int position = 0;
 
@@ -13,6 +18,10 @@ public abstract class Wiring {
 	 * @return
 	 */
 	public char map(char c) {
-		return wiring[(c - 'A' + position) % 26][1];
+		char cc = wiring[(c - 'A' + position) % 26][1];
+		if (LOGGER.isLoggable(Level.FINEST)) {
+			LOGGER.log(Level.FINEST, "mapping " + c + "->" + cc);
+		}
+		return cc;
 	}
 }

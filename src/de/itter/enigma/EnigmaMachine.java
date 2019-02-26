@@ -1,6 +1,11 @@
 package de.itter.enigma;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class EnigmaMachine {
+
+	private static Logger LOGGER = Logger.getLogger(EnigmaMachine.class.getName());
 
 	private Rotor[] rotors = new Rotor[3];
 	private Rotor reflector = null;
@@ -57,17 +62,29 @@ public class EnigmaMachine {
 		return entryWheel;
 	}
 
+	private void step() {
+		rotors[2].step();
+	}
+
 	public char type(char plainChar) {
+
 		char c = plainChar;
+		step();
+
+		c = entryWheel.map(c);
 		for (int i = 0; i < rotors.length; i++) {
 			c = rotors[i].map(c);
-			rotors[i].step();// or before and what about fixed rotors?
 		}
 		c = reflector.map(c);
 		for (int i = rotors.length - 1; i >= 0; i--) {
 			c = rotors[i].map(c);
-			rotors[i].step();// or before and what about fixed rotors?
 		}
+		c = entryWheel.map(c);
+
+		if (LOGGER.isLoggable(Level.FINER)) {
+			LOGGER.log(Level.FINER, plainChar + "->" + c);
+		}
+
 		return c;
 	}
 
