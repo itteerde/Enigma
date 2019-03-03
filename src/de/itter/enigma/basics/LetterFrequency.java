@@ -1,7 +1,7 @@
 /**
  * 
  */
-package de.itter.enigma;
+package de.itter.enigma.basics;
 
 import java.io.IOException;
 import java.nio.file.Files;

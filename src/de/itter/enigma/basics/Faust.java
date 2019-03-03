@@ -1,7 +1,7 @@
 /**
  * 
  */
-package de.itter.enigma;
+package de.itter.enigma.basics;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -9,6 +9,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Stream;
+
+import de.itter.enigma.Tools;
+import de.itter.enigma.Wiring;
 
 /**
  * @author Erik Itter
