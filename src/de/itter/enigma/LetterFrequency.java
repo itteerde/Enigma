@@ -25,6 +25,12 @@ public class LetterFrequency {
 		in.forEach(s::append);
 		String text = s.toString().toUpperCase();
 		System.out.println(Arrays.toString(letterFrequency(text)));
+
+		in = Files.lines(Paths.get("res/chiffre.txt"));
+		s = new StringBuffer();
+		in.forEach(s::append);
+		text = s.toString().toUpperCase();
+		System.out.println(Arrays.toString(letterFrequency(text)));
 	}
 
 	public static int[] letterFrequency(String text) {
