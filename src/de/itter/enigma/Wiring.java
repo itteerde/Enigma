@@ -1,6 +1,5 @@
 package de.itter.enigma;
 
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public abstract class Wiring {
@@ -19,7 +18,7 @@ public abstract class Wiring {
 	 */
 	public char map(char c) {
 		char cc = wiring[(c - 'A' + position) % 26][1];
-		LOGGER.log(Level.SEVERE, "mapping " + c + "->" + cc);
+		// LOGGER.log(Level.SEVERE, "mapping " + c + "->" + cc);
 		return cc;
 	}
 }
